@@ -23,7 +23,7 @@ buttonFiles.forEach(buttonFile => {
         console.log(str);
         const typing = typeof(str);
         console.log(typing);
-        fetch('http://localhost:3000/fileName', {
+        fetch('http://10.10.10.23/fileName', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

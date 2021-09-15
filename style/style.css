@@ -35,8 +35,8 @@ form {
     position: fixed;
     display: none;
     background: rgb(230, 230, 230);
-    width: 900px;
-    height: 900px;
+    width: 850px;
+    height: 850px;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
