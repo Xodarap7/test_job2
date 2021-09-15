@@ -1,0 +1,44 @@
+<div class="bg"></div>
+<div class="paint-container">
+    <div class="close-button">
+        <a href="/">Закрыть</a>
+    </div>
+    <div class="canvas-container">
+    <canvas id="canvas" width="100%" height="100%"></canvas>
+</div>
+</div>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <div class="inline">
+        <label for="file">Выберите файл для загрузки</label>
+        <input type="file" name="figurefile.txt">
+    </div>
+    <div>
+        <input type="submit" value="send">
+    </div>
+</form>
+
+
+
+
+<p>Выберите файл для отрисовки</p>
+<div class="files-container">
+    {{#if figures.length}}
+    <form class="form-send-file-name" action="/fileName" method="post" enctype="multipart/form-data">
+        <ul>
+            {{#each figures}}
+                <li class="files-list">
+                    <a id=`{{fileName}}` class="button-file">{{fileName}}</a>
+    
+                </li>
+            {{/each}}
+        </ul>
+        <input class="hidden-str" type="hidden">
+    </form>   
+{{else}}
+<p>No files!</p>
+{{/if}}
+</div>
+<script src="../js/send.js"></script>
+
+

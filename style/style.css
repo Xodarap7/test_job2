@@ -1,0 +1,58 @@
+* {
+    margin: 0 0;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white
+}
+
+.container {
+    width: 1250;
+    margin: auto;
+}
+
+form {
+    margin-bottom: 50px;
+    align-content: center;
+}
+
+.bg {
+    display: none;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    width: 100%;
+    height: 110vh;
+    z-index: 4;
+}
+
+.paint-container {
+    position: fixed;
+    display: none;
+    background: rgb(230, 230, 230);
+    width: 900px;
+    height: 900px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 5;
+}
+
+.close-button {
+    display: none;
+    width: 100px;
+    z-index: 6;
+    margin: 0 0;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button-file {
+    cursor: pointer;
+}
